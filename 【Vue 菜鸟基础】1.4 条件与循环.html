@@ -1,0 +1,317 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+    
+  1.4 条件与循环 - 【Vue 菜鸟基础】说了是村长
+  
+  </title>
+ <meta name="description" content="">
+ <link href="atom.xml" rel="alternate" title="【Vue 菜鸟基础】说了是村长" type="application/atom+xml">
+    <link rel="stylesheet" href="asset/css/foundation.min.css" />
+    <link rel="stylesheet" href="asset/css/docs.css" />
+
+    <script src="asset/js/vendor/modernizr.js"></script>
+    <script src="asset/js/vendor/jquery.js"></script>
+    <script src="asset/highlightjs/highlight.pack.js"></script>
+    <link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+  </head>
+  <body class="antialiased hide-extras">
+    
+    <div class="marketing off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+
+
+<nav class="top-bar docs-bar hide-for-small" data-topbar>
+
+<div id="header">
+    <h1><a href="index.html">【Vue 菜鸟基础】说了是村长</a></h1>
+</div>
+
+</nav>
+        <nav class="tab-bar show-for-small">
+  <a href="javascript:void(0)" class="left-off-canvas-toggle menu-icon">
+    <span> &nbsp; 【Vue 菜鸟基础】说了是村长</span>
+  </a>
+</nav>
+
+<aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+      <li><a href="index.html">Home</a></li>
+      
+        <li class="divider"></li>
+        <li><label>目录</label></li>
+
+          
+            <li><a title="0 序" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%910%20%E5%BA%8F.html">0 序</a></li>
+          
+            <li><a title="1.1 开始" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.1%20%E5%BC%80%E5%A7%8B.html">1.1 开始</a></li>
+          
+            <li><a title="1.2 起步" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.2%20%E8%B5%B7%E6%AD%A5.html">1.2 起步</a></li>
+          
+            <li><a title="1.3 模板语法" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.3%20%E6%A8%A1%E6%9D%BF%E8%AF%AD%E6%B3%95.html">1.3 模板语法</a></li>
+          
+            <li><a title="1.4 条件与循环" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.4%20%E6%9D%A1%E4%BB%B6%E4%B8%8E%E5%BE%AA%E7%8E%AF.html">1.4 条件与循环</a></li>
+          
+            <li><a title="1.5 计算属性" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.5%20%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7.html">1.5 计算属性</a></li>
+          
+            <li><a title="1.6 监听属性" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.6%20%E7%9B%91%E5%90%AC%E5%B1%9E%E6%80%A7.html">1.6 监听属性</a></li>
+          
+            <li><a title="1.7 样式绑定" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.7%20%E6%A0%B7%E5%BC%8F%E7%BB%91%E5%AE%9A.html">1.7 样式绑定</a></li>
+          
+            <li><a title="1.8 事件处理" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.8%20%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86.html">1.8 事件处理</a></li>
+          
+            <li><a title="1.9 表单" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.9%20%E8%A1%A8%E5%8D%95.html">1.9 表单</a></li>
+          
+            <li><a title="1.10 组件" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.10%20%E7%BB%84%E4%BB%B6.html">1.10 组件</a></li>
+          
+            <li><a title="1.11 自定义指令" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.11%20%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8C%87%E4%BB%A4.html">1.11 自定义指令</a></li>
+          
+            <li><a title="1.12 路由" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.12%20%E8%B7%AF%E7%94%B1.html">1.12 路由</a></li>
+          
+
+      
+      </ul>
+    </aside>
+
+<a class="exit-off-canvas" href="#"></a>
+
+        <section id="main-content" role="main" class="scroll-container">
+
+          <div class="row">
+            <div class="large-3 medium-3 columns">
+              <div class="hide-for-small">
+                <div class="sidebar">
+                <nav>
+                  <ul id="side-nav" class="side-nav">
+
+                    
+                      <li class="side-title"><span>目录</span></li>
+                        
+                          <li><a title="0 序" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%910%20%E5%BA%8F.html">0 序</a></li>
+                        
+                          <li><a title="1.1 开始" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.1%20%E5%BC%80%E5%A7%8B.html">1.1 开始</a></li>
+                        
+                          <li><a title="1.2 起步" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.2%20%E8%B5%B7%E6%AD%A5.html">1.2 起步</a></li>
+                        
+                          <li><a title="1.3 模板语法" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.3%20%E6%A8%A1%E6%9D%BF%E8%AF%AD%E6%B3%95.html">1.3 模板语法</a></li>
+                        
+                          <li><a title="1.4 条件与循环" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.4%20%E6%9D%A1%E4%BB%B6%E4%B8%8E%E5%BE%AA%E7%8E%AF.html">1.4 条件与循环</a></li>
+                        
+                          <li><a title="1.5 计算属性" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.5%20%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7.html">1.5 计算属性</a></li>
+                        
+                          <li><a title="1.6 监听属性" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.6%20%E7%9B%91%E5%90%AC%E5%B1%9E%E6%80%A7.html">1.6 监听属性</a></li>
+                        
+                          <li><a title="1.7 样式绑定" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.7%20%E6%A0%B7%E5%BC%8F%E7%BB%91%E5%AE%9A.html">1.7 样式绑定</a></li>
+                        
+                          <li><a title="1.8 事件处理" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.8%20%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86.html">1.8 事件处理</a></li>
+                        
+                          <li><a title="1.9 表单" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.9%20%E8%A1%A8%E5%8D%95.html">1.9 表单</a></li>
+                        
+                          <li><a title="1.10 组件" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.10%20%E7%BB%84%E4%BB%B6.html">1.10 组件</a></li>
+                        
+                          <li><a title="1.11 自定义指令" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.11%20%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8C%87%E4%BB%A4.html">1.11 自定义指令</a></li>
+                        
+                          <li><a title="1.12 路由" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.12%20%E8%B7%AF%E7%94%B1.html">1.12 路由</a></li>
+                        
+
+                    
+                  </ul>
+                </nav>
+                </div>
+              </div>
+            </div>
+            <div class="large-9 medium-9 columns">
+
+ <div class="markdown-body">
+<h1>1.4 条件与循环</h1>
+
+<ul>
+<li>
+<a href="#toc_0">条件</a>
+</li>
+<li>
+<a href="#toc_1">显示与隐藏</a>
+</li>
+<li>
+<a href="#toc_2">循环</a>
+</li>
+</ul>
+
+
+<h3 id="toc_0">条件</h3>
+
+<ul>
+<li><code>v-if</code>、<code>v-else-if</code>、<code>v-else</code>；</li>
+</ul>
+
+<pre><code>&lt;div id=&quot;app&quot; @click=&quot;randomAgain&quot;&gt;
+    &lt;div v-if=&quot;r &lt; 60&quot;&gt;不及格&lt;/div&gt;
+    &lt;div v-else-if=&quot;(r &gt;= 60) &amp;&amp; (r &lt; 80)&quot;&gt;良好&lt;/div&gt;
+    &lt;div v-else=&quot;r &gt;= 80&quot;&gt;优秀&lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+
+<pre><code>&lt;script&gt;
+    var app = new Vue({
+        el: &#39;#app&#39;,
+        data: {
+            r: 80
+        },
+        methods: {
+            randomAgain: function () {
+                this.r = Math.random()*100;
+            }
+        }
+    })
+&lt;/script&gt;
+</code></pre>
+
+<h3 id="toc_1">显示与隐藏</h3>
+
+<ul>
+<li><code>v-show</code>；</li>
+</ul>
+
+<pre><code>&lt;div id=&quot;app&quot; @click=&quot;hide&quot;&gt;
+    &lt;div v-show=&quot;look&quot;&gt;点击隐藏&lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+
+<pre><code>&lt;script&gt;
+    var app = new Vue({
+        el: &#39;#app&#39;,
+        data: {
+            look: true
+        },
+        methods: {
+            hide: function () {
+                this.look = false;
+            }
+        }
+    })
+&lt;/script&gt;
+</code></pre>
+
+<h3 id="toc_2">循环</h3>
+
+<ul>
+<li>可以遍历数组（特殊字典）、字典、数值；</li>
+<li>可以多参数；</li>
+</ul>
+
+<pre><code>&lt;div id=&quot;app&quot;&gt;
+    &lt;div v-for=&quot;obj in books&quot;&gt;
+        {{obj}}
+    &lt;/div&gt;
+
+    &lt;div v-for=&quot;obj in object&quot;&gt;
+        {{obj}}
+    &lt;/div&gt;
+
+    &lt;div v-for=&quot;(obj, key, idx) in object&quot;&gt;
+        {{obj}} - {{key}} - {{idx}}
+    &lt;/div&gt;
+    
+    &lt;div v-for=&quot;n in 10&quot;&gt;
+        {{n}}
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<pre><code>&lt;script&gt;
+    var app = new Vue({
+        el: &#39;#app&#39;,
+        data: {
+            books: [
+                &#39;语文&#39;, &#39;数学&#39;
+            ],
+            object: {
+                a: &#39;aaa&#39;,
+                b: &#39;bbb&#39;
+            }
+        }
+    })
+&lt;/script&gt;
+</code></pre>
+
+
+</div>
+
+<br /><br />
+<hr />
+
+<div class="row clearfix">
+  <div class="large-6 columns">
+	<div class="text-left" style="padding:15px 0px;">
+		
+	        <a href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.3%20%E6%A8%A1%E6%9D%BF%E8%AF%AD%E6%B3%95.html"  title="Previous Post: 1.3 模板语法">&laquo; 1.3 模板语法</a>
+	    
+	</div>
+  </div>
+  <div class="large-6 columns">
+	<div class="text-right" style="padding:15px 0px;">
+		
+	        <a href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.5%20%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7.html" 
+	        title="Next Post: 1.5 计算属性">1.5 计算属性 &raquo;</a>
+	    
+	</div>
+  </div>
+</div>
+
+<div class="row">
+<div style="padding:0px 0.93em;" class="share-comments">
+
+</div>
+</div>
+<script type="text/javascript">
+	$(function(){
+		var currentURL = '%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.4%20%E6%9D%A1%E4%BB%B6%E4%B8%8E%E5%BE%AA%E7%8E%AF.html';
+		$('#side-nav a').each(function(){
+			if($(this).attr('href') == currentURL){
+				$(this).parent().addClass('active');
+			}
+		});
+	});
+</script>  
+</div></div>
+
+
+<div class="page-bottom">
+  <div class="row">
+  <hr />
+  <div class="small-9 columns">
+  <p class="copyright">Copyright &copy; 2015
+Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a>,&nbsp; 
+Theme used <a target="_blank" href="http://github.com">GitHub CSS</a>.</p>
+  </div>
+  <div class="small-3 columns">
+  <p class="copyright text-right"><a href="#header">TOP</a></p>
+  </div>
+   
+  </div>
+</div>
+
+        </section>
+      </div>
+    </div>
+    
+    
+    <script src="asset/js/foundation.min.js"></script>
+    <script src="asset/js/foundation/foundation.offcanvas.js"></script>
+    <script>
+      $(document).foundation();
+
+     
+    </script>
+    
+
+
+  </body>
+</html>

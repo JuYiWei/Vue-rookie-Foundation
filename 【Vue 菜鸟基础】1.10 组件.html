@@ -1,0 +1,416 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+    
+  1.10 组件 - 【Vue 菜鸟基础】说了是村长
+  
+  </title>
+ <meta name="description" content="">
+ <link href="atom.xml" rel="alternate" title="【Vue 菜鸟基础】说了是村长" type="application/atom+xml">
+    <link rel="stylesheet" href="asset/css/foundation.min.css" />
+    <link rel="stylesheet" href="asset/css/docs.css" />
+
+    <script src="asset/js/vendor/modernizr.js"></script>
+    <script src="asset/js/vendor/jquery.js"></script>
+    <script src="asset/highlightjs/highlight.pack.js"></script>
+    <link href="asset/highlightjs/styles/github.css" media="screen, projection" rel="stylesheet" type="text/css">
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+  </head>
+  <body class="antialiased hide-extras">
+    
+    <div class="marketing off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+
+
+<nav class="top-bar docs-bar hide-for-small" data-topbar>
+
+<div id="header">
+    <h1><a href="index.html">【Vue 菜鸟基础】说了是村长</a></h1>
+</div>
+
+</nav>
+        <nav class="tab-bar show-for-small">
+  <a href="javascript:void(0)" class="left-off-canvas-toggle menu-icon">
+    <span> &nbsp; 【Vue 菜鸟基础】说了是村长</span>
+  </a>
+</nav>
+
+<aside class="left-off-canvas-menu">
+      <ul class="off-canvas-list">
+      <li><a href="index.html">Home</a></li>
+      
+        <li class="divider"></li>
+        <li><label>目录</label></li>
+
+          
+            <li><a title="0 序" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%910%20%E5%BA%8F.html">0 序</a></li>
+          
+            <li><a title="1.1 开始" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.1%20%E5%BC%80%E5%A7%8B.html">1.1 开始</a></li>
+          
+            <li><a title="1.2 起步" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.2%20%E8%B5%B7%E6%AD%A5.html">1.2 起步</a></li>
+          
+            <li><a title="1.3 模板语法" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.3%20%E6%A8%A1%E6%9D%BF%E8%AF%AD%E6%B3%95.html">1.3 模板语法</a></li>
+          
+            <li><a title="1.4 条件与循环" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.4%20%E6%9D%A1%E4%BB%B6%E4%B8%8E%E5%BE%AA%E7%8E%AF.html">1.4 条件与循环</a></li>
+          
+            <li><a title="1.5 计算属性" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.5%20%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7.html">1.5 计算属性</a></li>
+          
+            <li><a title="1.6 监听属性" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.6%20%E7%9B%91%E5%90%AC%E5%B1%9E%E6%80%A7.html">1.6 监听属性</a></li>
+          
+            <li><a title="1.7 样式绑定" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.7%20%E6%A0%B7%E5%BC%8F%E7%BB%91%E5%AE%9A.html">1.7 样式绑定</a></li>
+          
+            <li><a title="1.8 事件处理" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.8%20%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86.html">1.8 事件处理</a></li>
+          
+            <li><a title="1.9 表单" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.9%20%E8%A1%A8%E5%8D%95.html">1.9 表单</a></li>
+          
+            <li><a title="1.10 组件" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.10%20%E7%BB%84%E4%BB%B6.html">1.10 组件</a></li>
+          
+            <li><a title="1.11 自定义指令" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.11%20%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8C%87%E4%BB%A4.html">1.11 自定义指令</a></li>
+          
+            <li><a title="1.12 路由" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.12%20%E8%B7%AF%E7%94%B1.html">1.12 路由</a></li>
+          
+
+      
+      </ul>
+    </aside>
+
+<a class="exit-off-canvas" href="#"></a>
+
+        <section id="main-content" role="main" class="scroll-container">
+
+          <div class="row">
+            <div class="large-3 medium-3 columns">
+              <div class="hide-for-small">
+                <div class="sidebar">
+                <nav>
+                  <ul id="side-nav" class="side-nav">
+
+                    
+                      <li class="side-title"><span>目录</span></li>
+                        
+                          <li><a title="0 序" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%910%20%E5%BA%8F.html">0 序</a></li>
+                        
+                          <li><a title="1.1 开始" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.1%20%E5%BC%80%E5%A7%8B.html">1.1 开始</a></li>
+                        
+                          <li><a title="1.2 起步" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.2%20%E8%B5%B7%E6%AD%A5.html">1.2 起步</a></li>
+                        
+                          <li><a title="1.3 模板语法" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.3%20%E6%A8%A1%E6%9D%BF%E8%AF%AD%E6%B3%95.html">1.3 模板语法</a></li>
+                        
+                          <li><a title="1.4 条件与循环" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.4%20%E6%9D%A1%E4%BB%B6%E4%B8%8E%E5%BE%AA%E7%8E%AF.html">1.4 条件与循环</a></li>
+                        
+                          <li><a title="1.5 计算属性" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.5%20%E8%AE%A1%E7%AE%97%E5%B1%9E%E6%80%A7.html">1.5 计算属性</a></li>
+                        
+                          <li><a title="1.6 监听属性" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.6%20%E7%9B%91%E5%90%AC%E5%B1%9E%E6%80%A7.html">1.6 监听属性</a></li>
+                        
+                          <li><a title="1.7 样式绑定" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.7%20%E6%A0%B7%E5%BC%8F%E7%BB%91%E5%AE%9A.html">1.7 样式绑定</a></li>
+                        
+                          <li><a title="1.8 事件处理" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.8%20%E4%BA%8B%E4%BB%B6%E5%A4%84%E7%90%86.html">1.8 事件处理</a></li>
+                        
+                          <li><a title="1.9 表单" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.9%20%E8%A1%A8%E5%8D%95.html">1.9 表单</a></li>
+                        
+                          <li><a title="1.10 组件" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.10%20%E7%BB%84%E4%BB%B6.html">1.10 组件</a></li>
+                        
+                          <li><a title="1.11 自定义指令" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.11%20%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8C%87%E4%BB%A4.html">1.11 自定义指令</a></li>
+                        
+                          <li><a title="1.12 路由" href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.12%20%E8%B7%AF%E7%94%B1.html">1.12 路由</a></li>
+                        
+
+                    
+                  </ul>
+                </nav>
+                </div>
+              </div>
+            </div>
+            <div class="large-9 medium-9 columns">
+
+ <div class="markdown-body">
+<h1>1.10 组件</h1>
+
+<ul>
+<li>
+<a href="#toc_0">简单实例</a>
+</li>
+<li>
+<a href="#toc_1">局部组件</a>
+</li>
+<li>
+<a href="#toc_2">组件添加属性</a>
+</li>
+<li>
+<a href="#toc_3">动态绑定组件属性</a>
+</li>
+<li>
+<a href="#toc_4">组件属性验证</a>
+</li>
+<li>
+<a href="#toc_5">自定义事件</a>
+</li>
+</ul>
+
+
+<h3 id="toc_0">简单实例</h3>
+
+<pre><code>&lt;my-elem&gt;&lt;/my-elem&gt;
+&lt;div id=&quot;app&quot;&gt;
+    &lt;my-elem&gt;&lt;/my-elem&gt;
+&lt;/div&gt;
+</code></pre>
+
+<pre><code>&lt;script&gt;
+    Vue.component(&#39;my-elem&#39;, {
+        template: &#39;&lt;div&gt;&lt;h1&gt;自定义标题&lt;/h1&gt;&lt;p&gt;自定义内容&lt;/p&gt;&lt;/div&gt;&#39;
+    })
+&lt;/script&gt;
+</code></pre>
+
+<h3 id="toc_1">局部组件</h3>
+
+<pre><code>&lt;!--局部组件，不可用--&gt;
+&lt;my-elem&gt;&lt;/my-elem&gt;
+
+&lt;div id=&quot;app&quot;&gt;
+    &lt;!--局部组件只能在 #app 内部使用--&gt;
+    &lt;my-elem&gt;&lt;/my-elem&gt;
+&lt;/div&gt;
+</code></pre>
+
+<pre><code>&lt;script&gt;
+    var subComponent = {
+        template: &#39;&lt;div&gt;&lt;h1&gt;自定义标题&lt;/h1&gt;&lt;p&gt;自定义内容&lt;/p&gt;&lt;/div&gt;&#39;
+    }
+
+    var app = new Vue({
+        el: &#39;#app&#39;,
+        data: {
+
+        },
+        components: {
+            &#39;my-elem&#39;: subComponent
+        }
+    });
+&lt;/script&gt;
+</code></pre>
+
+<h3 id="toc_2">组件添加属性</h3>
+
+<pre><code>&lt;div id=&quot;app&quot;&gt;
+    &lt;my-elem title=&quot;我是标题&quot; content=&quot;我是内容&quot;&gt;&lt;/my-elem&gt;
+&lt;/div&gt;
+</code></pre>
+
+<pre><code>&lt;script&gt;
+    Vue.component(&#39;my-elem&#39;, {
+        props:[&#39;title&#39;, &#39;content&#39;],
+        template: &#39;&lt;div&gt;&lt;h1&gt;{{title}}&lt;/h1&gt;&lt;p&gt;{{content}}&lt;/p&gt;&lt;/div&gt;&#39;
+    })
+
+&lt;/script&gt;
+</code></pre>
+
+<h3 id="toc_3">动态绑定组件属性</h3>
+
+<ul>
+<li>与常规元素，绑定属性类似；</li>
+</ul>
+
+<pre><code>&lt;div id=&quot;app&quot;&gt;
+    &lt;my-elem v-bind:title=&quot;myTitle&quot; v-bind:content=&quot;myContent&quot;&gt;&lt;/my-elem&gt;
+&lt;/div&gt;
+</code></pre>
+
+<pre><code>&lt;script&gt;
+
+    Vue.component(&#39;my-elem&#39;, {
+        props:[&#39;title&#39;, &#39;content&#39;],
+        template: &#39;&lt;div&gt;&lt;h1&gt;{{title}}&lt;/h1&gt;&lt;p&gt;{{content}}&lt;/p&gt;&lt;/div&gt;&#39;
+    })
+
+    var app = new Vue({
+        el: &#39;#app&#39;,
+        data: {
+            &#39;myTitle&#39;: &#39;我也是标题&#39;,
+            &#39;myContent&#39;: &#39;我也是内容&#39;
+        }
+    });
+&lt;/script&gt;
+</code></pre>
+
+<h3 id="toc_4">组件属性验证</h3>
+
+<pre><code>    Vue.component(&#39;my-elem&#39;, {
+
+        props: {
+            // 指定类型
+            title: String,
+            
+            // 多种类型
+            content: [String, Number],
+            
+            // 指定类型，必填
+            auth: {
+                type: String,
+                required: true
+            },
+            
+            // 指定类型，默认值
+            count: {
+                type: Number,
+                default: 100
+            },
+            
+            // 指定类型，默认 对象
+            info: {
+                type:  Object,
+                default: {
+                    name: &#39;张三&#39;,
+                    age: 18
+                }
+            },
+            
+            // 指定类型，添加校验函数
+            result: {
+                validator: function (value) {
+                    return value &gt;= 60;
+                }
+            }
+        },
+
+        template: &#39;&lt;div&gt;&lt;h1&gt;{{title}}&lt;/h1&gt;&lt;p&gt;{{content}}&lt;/p&gt;&lt;/div&gt;&#39;
+    })
+</code></pre>
+
+<h3 id="toc_5">自定义事件</h3>
+
+<ul>
+<li>下面举例，对 <code>my-elem</code> 组件自定义了事件 <code>my-click</code>；</li>
+</ul>
+
+<pre><code>&lt;div id=&quot;app&quot;&gt;
+    &lt;my-elem v-on:my-click=&quot;instanceClick&quot; v-on:click.native=&quot;nativeClick&quot;&gt;&lt;/my-elem&gt;
+    &lt;p&gt;{{instanceMessage}}&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+
+<pre><code>&lt;script&gt;
+    Vue.component(&#39;my-elem&#39;, {
+        template: &#39;&lt;div v-on:click=&quot;templateClick&quot;&gt;&lt;h1&gt;{{title}}&lt;/h1&gt;&lt;p&gt;{{count}}&lt;/p&gt;&lt;/div&gt;&#39;,
+
+        data: function () {
+            return {count: 0, title: &#39;标题&#39;}
+        },
+
+        methods: {
+            templateClick: function () {
+                this.count +=1;
+                this.title = &#39;修改标题&#39;;
+                this.$emit(&#39;my-click&#39;);  // 触发自定义事件 my-click，实际是使用了组件中的 click 传递的，组件中使用 click 会被内部的 my-click 屏蔽，（可使用特殊处理）
+            }
+        }
+    })
+
+    var app = new Vue({
+        el: &#39;#app&#39;,
+        data: {
+            instanceMessage: 1
+        },
+        methods: {
+            instanceClick: function () {
+                this.instanceMessage *=2;
+            }
+            nativeClick: function () {
+                alert(&#39;123&#39;);
+            }
+        }
+    });
+
+&lt;/script&gt;
+</code></pre>
+
+<blockquote>
+<p>不屏蔽原始事件，使用 <code>.native</code> 修饰。</p>
+</blockquote>
+
+<pre><code>&lt;div id=&quot;app&quot;&gt;
+    &lt;my-elem v-on:my-click=&quot;instanceClick&quot; v-on:click.native=&quot;nativeClick&quot;&gt;&lt;/my-elem&gt;
+    &lt;p&gt;{{instanceMessage}}&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+
+
+</div>
+
+<br /><br />
+<hr />
+
+<div class="row clearfix">
+  <div class="large-6 columns">
+	<div class="text-left" style="padding:15px 0px;">
+		
+	        <a href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.9%20%E8%A1%A8%E5%8D%95.html"  title="Previous Post: 1.9 表单">&laquo; 1.9 表单</a>
+	    
+	</div>
+  </div>
+  <div class="large-6 columns">
+	<div class="text-right" style="padding:15px 0px;">
+		
+	        <a href="%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.11%20%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8C%87%E4%BB%A4.html" 
+	        title="Next Post: 1.11 自定义指令">1.11 自定义指令 &raquo;</a>
+	    
+	</div>
+  </div>
+</div>
+
+<div class="row">
+<div style="padding:0px 0.93em;" class="share-comments">
+
+</div>
+</div>
+<script type="text/javascript">
+	$(function(){
+		var currentURL = '%E3%80%90Vue%20%E8%8F%9C%E9%B8%9F%E5%9F%BA%E7%A1%80%E3%80%911.10%20%E7%BB%84%E4%BB%B6.html';
+		$('#side-nav a').each(function(){
+			if($(this).attr('href') == currentURL){
+				$(this).parent().addClass('active');
+			}
+		});
+	});
+</script>  
+</div></div>
+
+
+<div class="page-bottom">
+  <div class="row">
+  <hr />
+  <div class="small-9 columns">
+  <p class="copyright">Copyright &copy; 2015
+Powered by <a target="_blank" href="http://www.mweb.im">MWeb</a>,&nbsp; 
+Theme used <a target="_blank" href="http://github.com">GitHub CSS</a>.</p>
+  </div>
+  <div class="small-3 columns">
+  <p class="copyright text-right"><a href="#header">TOP</a></p>
+  </div>
+   
+  </div>
+</div>
+
+        </section>
+      </div>
+    </div>
+    
+    
+    <script src="asset/js/foundation.min.js"></script>
+    <script src="asset/js/foundation/foundation.offcanvas.js"></script>
+    <script>
+      $(document).foundation();
+
+     
+    </script>
+    
+
+
+  </body>
+</html>
